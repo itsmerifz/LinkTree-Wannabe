@@ -2,7 +2,6 @@
 
 *{
     font-family: 'Open Sans', sans-serif ;
-    overflow: hidden;
 }
 
 body{
@@ -10,7 +9,7 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 100%;
-    background-size: cover;
+    background-size: fill;
     height: 100vh;
 }
 
@@ -20,7 +19,11 @@ body{
 
 .kiri,.kanan{
     color: white;
-    padding-top: 100px;
+    padding-top: 50px;
+}
+
+.kanan{
+    margin-bottom: 50px;
 }
 
 .kiri h1{
@@ -29,6 +32,11 @@ body{
 
 .kiri h2{
     font-weight: 200;
+}
+
+.posbtn{
+    padding-left: 24px !important;
+    padding-right: 48px !important;
 }
 
 .tombol{
@@ -118,4 +126,27 @@ body{
     margin-right: 10px
 }
 
+@media(min-width: 992px){
+    *{
+        overflow: hidden;
+    }
+
+    .kiri{
+        border-right: 1px solid #dee2e6!important;
+    }
+
+    .kiri,.kanan{
+        color: white;
+        padding-top: 100px;
+    }
+    /* .tombol{
+        background-color: #dddddd;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 30px;
+        width: 40px;
+        flex-shrink: unset !important;
+    } */
+}
 
