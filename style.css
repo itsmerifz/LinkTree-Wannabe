@@ -17,9 +17,14 @@ body{
     width: 250px;
 }
 
-.kiri,.kanan{
+.kanan{
     color: white;
     padding-top: 50px;
+}
+
+.kiri{
+    color: #ffffff;
+    padding-top: 20px;
 }
 
 .kanan{
