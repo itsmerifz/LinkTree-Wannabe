@@ -1,194 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- CSS -->
-    
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
-*{
-    font-family: 'Open Sans', sans-serif ;
-}
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
 
-body{
-    background-image: url(img/bg-page.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 100%;
-    background-size: fill;
-    height: 100vh;
-}
+      body {
+        background-image: url(img/bg-page.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 100%;
+        background-size: fill;
+        height: 100vh;
+      }
 
-.foto{
-    width: 250px;
-}
+      .foto {
+        width: 250px;
+      }
 
-.kanan{
-    color: white;
-    padding-top: 50px;
-}
-
-.kiri{
-    color: #ffffff;
-    padding-top: 17px;
-}
-
-.kanan{
-    margin-bottom: 50px;
-}
-
-.kiri h1{
-    font-weight: 600;
-}
-
-.kiri h2{
-    font-weight: 200;
-}
-
-.posbtn{
-    padding-left: 24px !important;
-    padding-right: 48px !important;
-}
-
-.tombol{
-    background-color: #dddddd;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
-    margin-left: 30px;
-    width: 40px;
-    flex-shrink: unset !important;
-}
-
-.fb{
-    color: white ;
-    background-color: rgb(53, 53, 202) ;
-    border: 1px solid #ffffff;
-    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.fb:hover{
-    background-color: #dddddd;
-    color: rgb(53, 53, 202);
-    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-    border: 1px solid rgb(53, 53, 202);
-}
-
-.tw{
-    color: white ;
-    background-color: rgb(53, 160, 202) ;
-    border: 1px solid #ffffff;
-    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.tw:hover{
-    background-color: #dddddd;
-    color: rgb(53, 160, 202);
-    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-    border: 1px solid rgb(53, 160, 202);
-}
-
-.ig{
-    color: #ffffff;
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    border: 1px solid #ffffff;
-    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.ig:hover{
-    background: #dddddd;
-    color:#d6249f;
-    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-    border: 1px solid #d6249f;
-}
-
-.gh{
-    color: white ;
-    background-color: rgb(42, 42, 43) ;
-    border: 1px solid #ffffff;
-    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.gh:hover{
-    background-color: #dddddd;
-    color:rgb(42, 42, 43);
-    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-    border: 1px solid rgb(42, 42, 43);
-}
-
-.web{
-    color: white ;
-    background-color: rgb(221, 133, 51) ;
-    border: 1px solid #ffffff;
-    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.web:hover{
-    background-color: #dddddd;
-    color: rgb(221, 133, 51);
-    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-    border: 1px solid rgb(221, 133, 51);
-}
-
-
-.fa{
-    display: inline !important;
-    margin-right: 10px
-}
-
-@media(min-width: 992px){
-    *{
-        overflow: hidden;
-    }
-
-    .kiri{
-        border-right: 1px solid #dee2e6!important;
-    }
-
-    .kiri,.kanan{
+      .kanan {
         color: white;
-        padding-top: 100px;
-    }
-}
+        padding-top: 50px;
+      }
+
+      .kiri {
+        color: #ffffff;
+        padding-top: 17px;
+      }
+
+      .kanan {
+        margin-bottom: 50px;
+      }
+
+      .kiri h1 {
+        font-weight: 600;
+      }
+
+      .kiri h2 {
+        font-weight: 200;
+      }
+
+      .posbtn {
+        padding-left: 24px !important;
+        padding-right: 48px !important;
+      }
+
+      .tombol {
+        background-color: #dddddd;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 30px;
+        width: 40px;
+        flex-shrink: unset !important;
+      }
+
+      .fb {
+        color: white;
+        background-color: rgb(53, 53, 202);
+        border: 1px solid #ffffff;
+        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      .fb:hover {
+        background-color: #dddddd;
+        color: rgb(53, 53, 202);
+        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        border: 1px solid rgb(53, 53, 202);
+      }
+
+      .tw {
+        color: white;
+        background-color: rgb(53, 160, 202);
+        border: 1px solid #ffffff;
+        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      .tw:hover {
+        background-color: #dddddd;
+        color: rgb(53, 160, 202);
+        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        border: 1px solid rgb(53, 160, 202);
+      }
+
+      .ig {
+        color: #ffffff;
+        background: #d6249f;
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+        border: 1px solid #ffffff;
+        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      .ig:hover {
+        background: #dddddd;
+        color: #d6249f;
+        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        border: 1px solid #d6249f;
+      }
+
+      .gh {
+        color: white;
+        background-color: rgb(42, 42, 43);
+        border: 1px solid #ffffff;
+        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      .gh:hover {
+        background-color: #dddddd;
+        color: rgb(42, 42, 43);
+        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        border: 1px solid rgb(42, 42, 43);
+      }
+
+      .web {
+        color: white;
+        background-color: rgb(221, 133, 51);
+        border: 1px solid #ffffff;
+        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      .web:hover {
+        background-color: #dddddd;
+        color: rgb(221, 133, 51);
+        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        border: 1px solid rgb(221, 133, 51);
+      }
+
+      .fa {
+        display: inline !important;
+        margin-right: 10px;
+      }
+
+      @media (min-width: 992px) {
+        * {
+          overflow: hidden;
+        }
+
+        .kiri {
+          border-right: 1px solid #dee2e6 !important;
+        }
+
+        .kiri,
+        .kanan {
+          color: white;
+          padding-top: 100px;
+        }
+      }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
 
     <title>GoToLink | Muhamad Arief</title>
   </head>
   <body>
     <div class="container text-center tengah">
-        <div class="row mt-5">
-            <div class="col-lg-6 col-12 kiri">
-                <img src="img/avatar.jpg" alt="" class="rounded-circle foto">
-                <h1>Muhamad Arief</h1>
-                <h2>Stay Connected.</h2>
-            </div>
-            <div class="col-lg-6 col-12 kanan posbtn">
-                <div class="row text-center">
-                    <a href="http://fb.com/arief1707" target="_blank" class="tombol fb"> <i class="fa fa-facebook"></i>Facebook</a>
-                </div>
-                <div class="row mt-4 text-center">
-                    <a href="http://instagram.com/itsme_rifz" target="_blank" class="tombol ig"> <i class="fa fa-instagram"></i>Instagram</a>   
-                </div>
-                <div class="row mt-4 text-center">
-                    <a href="http://twitter.com/itsme_rifz" target="_blank" class="tombol tw"> <i class="fa fa-twitter"></i>Twitter</a>
-                </div>
-                <div class="row mt-4 text-center">
-                    <a href="http://github.com/itsmerifz" target="_blank" class="tombol gh"> <i class="fa fa-github"></i>Github</a>
-                </div>
-                <div class="row mt-4 text-center">
-                    <a href="http://itsmerifz.my.id" target="_blank" class="tombol web"> <i class="fa fa-globe"></i>Website</a>
-                </div>
-            </div>
+      <div class="row mt-5">
+        <div class="col-lg-6 col-12 kiri">
+          <img src="img/avatar.jpg" alt="" class="rounded-circle foto" />
+          <h1>Muhamad Arief</h1>
+          <h2>Stay Connected.</h2>
         </div>
+        <div class="col-lg-6 col-12 kanan posbtn">
+          <div class="row text-center">
+            <a href="http://fb.com/arief1707" target="_blank" class="tombol fb">
+              <i class="fa fa-facebook"></i>Facebook</a
+            >
+          </div>
+          <div class="row mt-4 text-center">
+            <a
+              href="http://instagram.com/itsme_rifz"
+              target="_blank"
+              class="tombol ig"
+            >
+              <i class="fa fa-instagram"></i>Instagram</a
+            >
+          </div>
+          <div class="row mt-4 text-center">
+            <a
+              href="http://twitter.com/itsme_rifz"
+              target="_blank"
+              class="tombol tw"
+            >
+              <i class="fa fa-twitter"></i>Twitter</a
+            >
+          </div>
+          <div class="row mt-4 text-center">
+            <a
+              href="http://github.com/itsmerifz"
+              target="_blank"
+              class="tombol gh"
+            >
+              <i class="fa fa-github"></i>Github</a
+            >
+          </div>
+          <div class="row mt-4 text-center">
+            <a href="http://itsmerifz.my.id" target="_blank" class="tombol web">
+              <i class="fa fa-globe"></i>Website</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
