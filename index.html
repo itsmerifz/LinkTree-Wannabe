@@ -8,160 +8,168 @@
     <!-- CSS -->
 
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
-      * {
-        font-family: "Open Sans", sans-serif;
-      }
+            * {
+              font-family: "Open Sans", sans-serif;
+            }
 
-      body {
-        background-image: url(img/bg-page.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        min-height: 100%;
-        background-size: fill;
-        height: 100vh;
-      }
+            body {
+              background-color:#d899ff;
+              background-image:
+              radial-gradient(at 28% 0%, hsla(242,77%,60%,1) 0px, transparent 50%),
+              radial-gradient(at 5% 18%, hsla(285,88%,73%,1) 0px, transparent 50%),
+              radial-gradient(at 3% 32%, hsla(265,74%,69%,1) 0px, transparent 50%),
+              radial-gradient(at 30% 80%, hsla(160,99%,74%,1) 0px, transparent 50%),
+              radial-gradient(at 89% 51%, hsla(255,99%,76%,1) 0px, transparent 50%);
+              background-position: center;
+              min-height: 100%;
+            }
 
-      .foto {
-        width: 250px;
-      }
+            .foto {
+              width: 250px;
+            }
 
-      .kanan {
-        color: white;
-        padding-top: 50px;
-      }
+            .kanan {
+              color: white;
+              padding-top: 50px;
+            }
 
-      .kiri {
-        color: #ffffff;
-        padding-top: 17px;
-      }
+            .kiri {
+              color: #ffffff;
+              padding-top: 17px;
+            }
 
-      .kanan {
-        margin-bottom: 50px;
-      }
+            .kanan {
+              margin-bottom: 50px;
+            }
 
-      .kiri h1 {
-        font-weight: 600;
-      }
+            .kiri h1 {
+              font-weight: 600;
+            }
 
-      .kiri h2 {
-        font-weight: 200;
-      }
+            .kiri h2 {
+              font-weight: 200;
+            }
 
-      .posbtn {
-        padding-left: 24px !important;
-        padding-right: 48px !important;
-      }
+            .posbtn {
+              padding-left: 24px !important;
+              padding-right: 48px !important;
+            }
 
-      .tombol {
-        background-color: #dddddd;
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 10px;
-        margin-left: 30px;
-        width: 40px;
-        flex-shrink: unset !important;
-      }
+            .tombol {
+              background-color: #dddddd;
+              text-decoration: none;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 30px;
+              width: 40px;
+              flex-shrink: unset !important;
+            }
 
-      .fb {
-        color: white;
-        background-color: rgb(53, 53, 202);
-        border: 1px solid #ffffff;
-        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-      }
+            .fb {
+              color: white;
+              background-color: rgb(53, 53, 202);
+              border: 1px solid #ffffff;
+              transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
 
-      .fb:hover {
-        background-color: #dddddd;
-        color: rgb(53, 53, 202);
-        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-        border: 1px solid rgb(53, 53, 202);
-      }
+            .fb:hover {
+              background-color: #dddddd;
+              color: rgb(53, 53, 202);
+              transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+              border: 1px solid rgb(53, 53, 202);
+            }
 
-      .tw {
-        color: white;
-        background-color: rgb(53, 160, 202);
-        border: 1px solid #ffffff;
-        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-      }
+            .tw {
+              color: white;
+              background-color: rgb(53, 160, 202);
+              border: 1px solid #ffffff;
+              transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
 
-      .tw:hover {
-        background-color: #dddddd;
-        color: rgb(53, 160, 202);
-        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-        border: 1px solid rgb(53, 160, 202);
-      }
+            .tw:hover {
+              background-color: #dddddd;
+              color: rgb(53, 160, 202);
+              transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+              border: 1px solid rgb(53, 160, 202);
+            }
 
-      .ig {
-        color: #ffffff;
-        background: #d6249f;
-        background: radial-gradient(
-          circle at 30% 107%,
-          #fdf497 0%,
-          #fdf497 5%,
-          #fd5949 45%,
-          #d6249f 60%,
-          #285aeb 90%
-        );
-        border: 1px solid #ffffff;
-        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-      }
+            .ig {
+              color: #ffffff;
+              background: #d6249f;
+              background: radial-gradient(
+                circle at 30% 107%,
+                #fdf497 0%,
+                #fdf497 5%,
+                #fd5949 45%,
+                #d6249f 60%,
+                #285aeb 90%
+              );
+              border: 1px solid #ffffff;
+              transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
 
-      .ig:hover {
-        background: #dddddd;
-        color: #d6249f;
-        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-        border: 1px solid #d6249f;
-      }
+            .ig:hover {
+              background: #dddddd;
+              color: #d6249f;
+              transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+              border: 1px solid #d6249f;
+            }
 
-      .gh {
-        color: white;
-        background-color: rgb(42, 42, 43);
-        border: 1px solid #ffffff;
-        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-      }
+            .gh {
+              color: white;
+              background-color: rgb(42, 42, 43);
+              border: 1px solid #ffffff;
+              transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
 
-      .gh:hover {
-        background-color: #dddddd;
-        color: rgb(42, 42, 43);
-        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-        border: 1px solid rgb(42, 42, 43);
-      }
+            .gh:hover {
+              background-color: #dddddd;
+              color: rgb(42, 42, 43);
+              transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+              border: 1px solid rgb(42, 42, 43);
+            }
 
-      .web {
-        color: white;
-        background-color: rgb(221, 133, 51);
-        border: 1px solid #ffffff;
-        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-      }
+            .web {
+              color: white;
+              background-color: rgb(221, 133, 51);
+              border: 1px solid #ffffff;
+              transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
 
-      .web:hover {
-        background-color: #dddddd;
-        color: rgb(221, 133, 51);
-        transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-        border: 1px solid rgb(221, 133, 51);
-      }
+            .web:hover {
+              background-color: #dddddd;
+              color: rgb(221, 133, 51);
+              transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+              border: 1px solid rgb(221, 133, 51);
+            }
 
-      .fa {
-        display: inline !important;
-        margin-right: 10px;
-      }
+            .fa {
+              display: inline !important;
+              margin-right: 10px;
+            }
 
-      @media (min-width: 992px) {
-        * {
-          overflow: hidden;
-        }
+            @media (min-width: 992px) {
+              * {
+                overflow: hidden;
+              }
+              
+              body{
+                background-repeat: no-repeat;
+                height: 100vh;
+              }
 
-        .kiri {
-          border-right: 1px solid #dee2e6 !important;
-        }
+              .kiri {
+                border-right: 1px solid #dee2e6 !important;
+              }
 
-        .kiri,
-        .kanan {
-          color: white;
-          padding-top: 100px;
-        }
-      }
+              .kiri,
+              .kanan {
+                color: white;
+                padding-top: 100px;
+              }
+            }
     </style>
     <link
       rel="stylesheet"
